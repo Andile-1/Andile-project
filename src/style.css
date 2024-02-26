@@ -8,12 +8,8 @@
   background: var(--secondary-color);
   text-align: center;
   padding: 80px 20px;
-  color: white;
-  background-image: url("../images/Lexus\ LBX\ 2024\ -\ Une\ voiture\ décontractée\ et\ conviviale.jpeg");
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  color: #000;
+  align-self: flex-end;
 }
 
 .hero p {
@@ -21,7 +17,8 @@
   font-weight: bold;
   margin: 0;
   color: #272142;
-  color: white;
+  color: #000;
+  display: flex;
 }
 nav a {
   text-decoration: none;
