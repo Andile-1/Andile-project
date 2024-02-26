@@ -5,19 +5,12 @@
   --default-font-family: "Poppins", sans-serif;
 }
 .hero {
-  background: var(--secondary-color);
+  background: white;
   text-align: center;
   padding: 80px 20px;
   color: #000;
-  align-self: flex-end;
-}
-
-.hero p {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  color: #272142;
-  color: #000;
+  background-image: url("/images/seltos.png");
+  background-repeat: no-repeat;
   display: flex;
 }
 nav a {
