@@ -5,27 +5,21 @@
   --default-font-family: "Poppins", sans-serif;
 }
 .hero {
-  background: white;
-  text-align: center;
-  padding: 80px 20px;
-  color: #000;
-  background-image: url("/images/seltos.png");
+  background-color: white;
+  background-image: url("/images/bmw-x5.jpeg");
   background-repeat: no-repeat;
-  display: flex;
 }
 #table {
   width: 300px;
-  margin: 20vh auto 0 auto;
-  padding: 20px;
+  padding: 15px;
+  margin: 0;
   background-color: whitesmoke;
   border-radius: 4px;
   font-size: 12px;
-  float: right;
-  padding: 0 auto;
 }
 #table h1 {
   color: #0f2027;
-  text-align: center;
+  text-align: left;
 }
 
 #table button {
@@ -38,13 +32,13 @@
   border-radius: 4px;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color: #272142;
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
+.nav a:hover,
 nav li.active a {
   color: var(--branding-color);
 }
