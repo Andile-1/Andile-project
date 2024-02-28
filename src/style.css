@@ -5,6 +5,10 @@
   --default-font-family: "Poppins", sans-serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+body {
+  background-color: #f0f0f0;
+  font-family: var(--default-font-family);
+}
 .hero {
   background-color: white;
   background-image: url("/images/bmw-x5.jpeg");
@@ -37,16 +41,47 @@ p {
   border: none;
   border-radius: 4px;
 }
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a,
+footer .email-link {
+  color: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
     line-height: 56px;
   }
 
-  h2 {
-    font-size: 44px;
-  }
-  .content {
+  .container {
     text-align: center;
     padding: 0;
   }
@@ -55,19 +90,6 @@ p {
     padding: 0;
     text-align: center;
   }
-}
-
-.nav a {
-  text-decoration: none;
-  color: #272142;
-  transition: all 100ms ease-in-out;
-}
-
-.nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
-  cursor: pointer;
-  background: #5e41a7;
 }
 
 .car-range {
@@ -88,10 +110,6 @@ nav li.active a {
 .carousel-item {
   height: 32rem;
   position: relative;
-}
-body {
-  background-color: #f0f0f0;
-  font-family: var(--default-font-family);
 }
 .register {
   font-size: 40px;
