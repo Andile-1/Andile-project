@@ -3,12 +3,18 @@
   --secondary-color: #faf9f6;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .hero {
   background-color: white;
   background-image: url("/images/bmw-x5.jpeg");
   background-repeat: no-repeat;
 }
+h1,
+p {
+  text-align: center;
+}
+
 #table {
   width: 300px;
   padding: 15px;
@@ -31,6 +37,25 @@
   border: none;
   border-radius: 4px;
 }
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+}
 
 .nav a {
   text-decoration: none;
@@ -41,6 +66,23 @@
 .nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+  cursor: pointer;
+  background: #5e41a7;
+}
+
+.car-range {
+  display: flex;
+}
+
+.car-range div {
+  border: 1px solid black;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+.car-range :hover {
+  cursor: pointer;
+  background: red;
 }
 
 .carousel-item {
